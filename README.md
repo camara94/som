@@ -158,3 +158,63 @@ Cela dépend de la plage et de l'échelle de vos données d'entrée. Si vous nor
 Cela dépend également de la taille de votre **SOM**. S'il s'agit d'un **10 par 10**, utilisez par exemple **σ=5**. Sinon, s'il s'agit d'une carte de **100 x 100**, utilisez **σ=50**.
 
 Dans la classification non supervisée, **σ** est parfois basé sur la distance euclidienne entre les centroïdes du premier et du deuxième amas les plus proches.
+
+#### Étape 4 : Ajuster les poids
+
+Chaque nœud dans le voisinage de la **BMU** (y compris la **BMU**) a son vecteur de poids ajusté selon l'équation suivante :
+
+<pre>
+ <code>
+        W(t+1) = W(t) + L(t) ( V(t) — W(t) )
+ </code>
+</pre>
+
+Où t représente le pas de temps et L est une petite variable appelée taux d'apprentissage(**learning rate**), qui diminue avec le temps. Ce que dit cette équationiLe poids nouvellement ajusté pour le nœud est égal à l'ancien poids (W), plus une fraction de la différence (L) entre l'ancien poids et le vecteur d'entrée (V).
+
+Ainsi, selon notre exemple, le nœud 4 est la meilleure unité de correspondance (comme vous pouvez le voir à l'étape 2) correspondant à leurs poids :
+
+![image 17](images/17.png)
+
+<code>Learning rate = 0.5</code>
+
+Mettez donc à jour ce poids selon l'équation ci-dessus
+
+**For W3,1**
+
+<code>New Weights = Old Weights + Learning Rate (Input Vector1 — Old Weights)</code>
+
+<code>New Weights = 0.39 + 0.5 (0.7–0.39)</code>
+
+<code>New Weights = 0.545</code>
+
+**For W3,2**
+
+<code>New Weights = Old Weights + Learning Rate (Input Vector2 — Old Weights)</code>
+
+<code>New Weights = 0.42 + 0.5 (0.6–0.42)</code>
+
+<code>New Weights = 0.51</code>
+
+**For W3,3**
+
+<code>New Weights = Old Weights + Learning Rate (Input Vector3 — Old Weights)</code>
+
+<code>New Weights = 0.45 + 0.5 (0.9–0.45)</code>
+
+<code>New Weights = 0.675</code>
+
+**Updated weights:**
+
+Donc, de cette façon, nous mettons à jour les poids.
+
+La décroissance du taux d'apprentissage est calculée à chaque itération à l'aide de l'équation suivante :
+
+![image 19](images/19.png)
+
+
+Au fur et à mesure des entraînements, le quartier se rétrécit progressivement. A la fin de la formation, les quartiers ont été réduits à zéro.
+
+
+![image 20](images/20.png)
+
+Le taux d'influence montre la quantité d'influence que la distance d'un nœud à la BMU a sur son apprentissage. Dans la forme la plus simple, le taux d'influence est égal à 1 pour tous les nœuds proches de la BMU et à zéro pour les autres, mais une fonction gaussienne est également courante. Enfin, à partir d'une distribution aléatoire de poids et à travers de nombreuses itérations, SOM peut arriver à une carte de zones stables. En fin de compte, l'interprétation des données doit être effectuée par un humain, mais SOM est une excellente technique pour présenter les modèles invisibles dans les données.
