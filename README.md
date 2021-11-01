@@ -96,3 +96,7 @@ Calculons la meilleure unité de correspondance à l'aide de la formule de dista
 Pour les 1ers nœuds :
 
 ![image 8](images/8.png)
+
+Pour le 2ème nœuds :
+
+![image 9](images/9.png)
