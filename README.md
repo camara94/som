@@ -141,8 +141,20 @@ La taille du voisinage autour de la BMU diminue avec une fonction de décroissan
 
 ![image 15](images/15.png)
 
-<code> Where t = 0, 1, 2, 3…. </code>
+<code> Pour t = 0, 1, 2, 3…. </code>
 
 La figure ci-dessous montre comment le voisinage diminue au fil du temps après chaque itération
 
 ![image 16](images/16.png)
+
+Au fil du temps, le voisinage se rétrécira à la taille d'un seul nœud… le **BMU**.
+
+Maintenant que nous connaissons le rayon, il suffit de parcourir tous les nœuds du réseau pour déterminer s'ils se trouvent ou non dans le rayon. Si un nœud se trouve dans le voisinage, son vecteur de poids est ajusté comme suit à l'étape 4.
+
+#### Comment définir la valeur du rayon dans la carte auto-organisée ?
+
+Cela dépend de la plage et de l'échelle de vos données d'entrée. Si vous normalisez à zéro les valeurs de vos caractéristiques, essayez **σ=4**. Si vous normalisez les valeurs des caractéristiques sur une plage de [0, 1], vous pouvez toujours essayer σ=4, mais une valeur de **σ=1** pourrait être meilleure. N'oubliez pas que vous devez diminuer le taux d'apprentissage et la taille de la fonction de voisinage avec des itérations croissantes, car aucune des métriques ne reste constante tout au long des itérations dans **SOM**.
+
+Cela dépend également de la taille de votre **SOM**. S'il s'agit d'un **10 par 10**, utilisez par exemple **σ=5**. Sinon, s'il s'agit d'une carte de **100 x 100**, utilisez **σ=50**.
+
+Dans la classification non supervisée, **σ** est parfois basé sur la distance euclidienne entre les centroïdes du premier et du deuxième amas les plus proches.
