@@ -85,3 +85,7 @@ Disons que nous prenons la ligne numéro 1 et que nous extrayons sa valeur pour 
 
 Pour déterminer la meilleure unité d'appariement, une méthode consiste à parcourir tous les nœuds et à calculer la distance euclidienne entre le vecteur de poids de chaque nœud et le vecteur d'entrée actuel. Le nœud avec un vecteur de poids le plus proche du vecteur d'entrée est étiqueté comme **BMU**.
 
+La distance euclidienne est donnée par :
+
+![image 7](images/7.png)
+
