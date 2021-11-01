@@ -72,3 +72,7 @@ Dans cet exemple, nous avons un jeu de données 3D et chacun des nœuds d'entré
 Chacun de ces nœuds de sortie ne fait pas exactement partie de l'espace d'entrée, mais essaie néanmoins de s'y intégrer, en développant des lieux imaginaires pour eux-mêmes.
 
 ![image 5](images/5.png)
+
+Nous avons initialisé aléatoirement les valeurs des poids (proche de 0 mais pas de 0).
+
+![image 6](images/6.png)
