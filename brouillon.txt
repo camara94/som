@@ -1,0 +1,89 @@
+Les cartes topologiques ou auto-organisatrices font partie de la famille des modèles dits à «apprentissage non supervisé», c’est-à-dire qui s’appliquent sur des données dont on connaît le domaine sur lequel porte le recueil statistique, mais pour lesquelles les connaissances a priori ne sont pas totalement organisées., les données en groupements «similaires» dont la structure de voisinage peut être matérialisée et visualisable par un espace discret de faible dimension (1, 2 ou 3D) appelé «carte topologique».ordre topologique est un apport supplémentaire permis par les réseaux de neurones à apprentissage non supervisé : les distances entre observations sont directement visibles sur a carte.
+
+
+Définition 
+
+Kohonen propose de projeter l’espace des données D sur un espace de faible dimension;en général 1, 2 ou 3D. Cet espace appelé Carte, que nous notons C, est constitué d’un ensemble de neurones interconnectés selon une structure de graphe non orienté.145), suivi d’un exemple en forme de cylindre (voir Fig.
+
+
+les cartes auto-organisées sont des réseaux de neurones non supervisés qui regroupent des données de haute dimension
+
+
+Pourquoi utiliser des cartes auto-organisées
+
+Trouver des clusters dans de grandes quantités de données (réduction de la dimensionnalité)
+
+Combinez divers ensembles de données pour trouver des modèles
+
+Visualisations puissantes
+
+Application dans n'importe quel domaine
+
+Une carte auto-organisée montrant les modèles de vote du Congrès américain. Les données d'entrée étaient un tableau avec une ligne pour chaque membre du Congrès et des colonnes pour certains votes contenant le vote oui/non/abstention de chaque membre. L'algorithme SOM a organisé ces membres dans une grille à deux dimensions en rapprochant les membres similaires. Le premier graphique montre le regroupement lorsque les données sont divisées en deux clusters. Le deuxième graphique montre la distance moyenne aux voisins : les distances plus grandes sont plus sombres. Le troisième graphique prédit l'appartenance à un parti républicain (rouge) ou démocrate (bleu). Les autres graphiques superposent chacun la carte résultante avec des valeurs prédites sur une dimension d'entrée : le rouge signifie un vote « oui » prévu sur ce projet de loi, le bleu signifie un vote « non ». L'intrigue a été créée dans Synapse.
+
+https://en.wikipedia.org/wiki/Self-organizing_map
+
+ Processus d’entrainement de SOM
+
+1. Initialiser les poids du réseau de neurones
+
+2. Sélectionnez l'entrée au hasard
+
+3. Sélectionnez le neurone gagnant en utilisant la distance euclidienne
+4. Mettre à jour les poids des neurones
+
+5. Revenir à 2 jusqu'à la fin de l'entraînement
+
+Décomposer la formule de mise à jour du poids
+
+
+
+Comment se produit la réduction de la dimensionnalité
+
+Après l'entrainement
+
+Des cartes auto-organisées ont été formées sur des images 3D pour construire un modèle de tête 3D
+
+Peut être appliqué à la reconnaissance des émotions
+
+L'image d'entrée est mappée sur des clusters dans l'espace de sortie
+
+
+
+
+Applicable à n'importe quel domaine
+
+Simplifie les informations complexes
+
+Apprend en mettant à jour les poids en fonction des entrées
+
+Forme des images 2D à l'aide de la distance euclidienne
+Kohonen: utilisation et limites
+
+
+
+Projection d’un espace quelconque dans un espace de
+dimension 1 ou 2
+ Propriété d’organisation, ou respect de la topologie
+ Réalise en même temps une quantification (avantage ou
+inconvénient…)
+ (Très) facile à manipuler par rapport à d’autres méthodes nonlinéaires de projection
+ Effet papillon (et/ou minima locaux)
+ Très difficile à étudier mathématiquement
+ Si 0 voisins: quantification vectorielle pure (“competitive
+learning”)
+ Peut être étendu à de l’apprentissage supervisé
+ Peut être implémenté en version batch
+
+
+Application en python
+
+Pour comparer la sécurité des compagnies aériennes, j'ai dû regrouper les neurones de sortie de cartes auto-organisées à l'aide d'une technique d'apprentissage automatique non supervisée (kmeans) qui regroupe les compagnies aériennes en différents groupes. Ces groupes sont:
+
+1. Safe airlines.
+2. Doubtfully safe airlines.
+3. Risky airlines.
+
+packages
+
+J'ai utilisé SimpSOM (Simple self organizing maps) en python pour faire la détection de fraude.
