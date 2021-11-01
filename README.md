@@ -46,3 +46,21 @@ Maintenant, ce que nous allons faire, c'est transformer ce SOM en un ensemble d'
 Considérez la structure d'auto-organisation qui a 3 nœuds d'entrée visibles et 9 sorties qui sont connectées directement à l'entrée comme indiqué ci-dessous fig.
 
 ![image 3](images/3.png)
+
+Nos valeurs de nœuds d'entrée sont :
+<pre>
+    <code>
+        x<sub>1</sub> = 0.7
+        x<sub>2</sub> = 0.6
+        x<sub>3</sub> = 0.9
+    </code>
+</pre>
+Voyons maintenant chaque étape en détail.
+
+#### Step 1: Initializing the Weights
+
+Maintenant, prenons le nœud de sortie le plus haut et concentrons-nous sur ses connexions avec les nœuds d'entrée. Comme vous pouvez le voir, une pondération est attribuée à chacune de ces connexions.
+
+![image 4](images/4.png)
+
+
