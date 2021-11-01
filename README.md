@@ -108,3 +108,9 @@ De même, nous calculons tous les nœuds restants de la même manière que vous 
 ![image 10](images/10.png)
 
 ![image 11](images/11.png)
+
+Puisque nous avons calculé toutes les valeurs de Noeuds respectifs. Il est maintenant temps de calculer la meilleure unité de correspondance.
+
+![image 12](images/12.png)
+
+Comme on peut le voir, le nœud numéro 3 est le plus proche avec une distance de 0,4. Nous appellerons ce nœud notre BMU (**best-matching unit**).
