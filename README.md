@@ -118,3 +118,11 @@ Comme on peut le voir, le nœud numéro 3 est le plus proche avec une distance d
 #### Que se passe-t-il ensuite ?
 
 Pour comprendre cette prochaine partie, nous devrons utiliser un plus grand SOM.
+
+![image 13](images/13.png)
+
+Soi-disant, vous comprenez maintenant quelle est la différence entre les poids dans le contexte SOM par rapport à celui auquel nous étions habitués lorsque nous traitions de l'apprentissage automatique supervisé.
+
+Le cercle rouge dans la figure ci-dessus représente le BMU de cette carte. Maintenant, le nouveau SOM devra mettre à jour ses poids afin qu'il soit encore plus proche de la première ligne de notre ensemble de données. La raison pour laquelle nous en avons besoin est que nos nœuds d'entrée ne peuvent pas être mis à jour, alors que nous avons le contrôle de nos nœuds de sortie.
+
+En termes simples, notre SOM se rapproche du point de données en étirant le BMU vers lui. L'objectif final est d'aligner notre carte sur l'ensemble de données comme nous le voyons dans l'image à l'extrême droite
