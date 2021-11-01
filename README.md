@@ -134,3 +134,15 @@ C'est là que les choses commencent à devenir plus intéressantes ! À chaque i
 La figure montre un exemple de la taille d'un quartier typique proche du début de l'entrainement.
 
 ![image 14](images/14.png)
+
+Vous pouvez voir que le quartier illustré ci-dessus est centré autour du BMU (point rouge) et englobe la plupart des autres nœuds et le rayon d'affichage du cercle.
+
+La taille du voisinage autour de la BMU diminue avec une fonction de décroissance exponentielle. Il rétrécit à chaque itération jusqu'à atteindre juste le BMU
+
+![image 15](images/15.png)
+
+<code> Where t = 0, 1, 2, 3…. </code>
+
+La figure ci-dessous montre comment le voisinage diminue au fil du temps après chaque itération
+
+![image 16](images/16.png)
