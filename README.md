@@ -36,3 +36,13 @@ L'entrainement se déroule en plusieurs étapes et en plusieurs itérations :
 Il est maintenant temps pour nous d'apprendre comment les SOM apprennent. Es-tu prêt? Commençons. Ici, nous avons une carte auto-organisatrice très basique.
 
 ![image 2](images/2.png)
+
+Nos vecteurs d'entrée représentent trois caractéristiques(features) et nous avons neuf nœuds de sortie.
+
+Cela étant dit, cela pourrait vous dérouter de voir comment cet exemple montre trois nœuds d'entrée produisant neuf nœuds de sortie. Ne soyez pas intrigué par cela. Les trois nœuds d'entrée représentent trois colonnes (dimensions) dans l'ensemble de données, mais chacune de ces colonnes peut contenir des milliers de lignes. Les nœuds de sortie dans un SOM sont toujours bidimensionnels.
+
+Maintenant, ce que nous allons faire, c'est transformer ce SOM en un ensemble d'entrées qui vous serait plus familier lorsque nous avons discuté des méthodes d'apprentissage automatique supervisé (réseaux de neurones artificiels, convolutifs et récurrents) dans les chapitres précédents.
+
+Considérez la structure d'auto-organisation qui a 3 nœuds d'entrée visibles et 9 sorties qui sont connectées directement à l'entrée comme indiqué ci-dessous fig.
+
+![image 3](images/3.png)
