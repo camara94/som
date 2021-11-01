@@ -106,3 +106,5 @@ Pour les 3ème nœuds :
 De même, nous calculons tous les nœuds restants de la même manière que vous pouvez le voir ci-dessous.
 
 ![image 10](images/10.png)
+
+![image 11](images/11.png)
