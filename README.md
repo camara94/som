@@ -63,4 +63,12 @@ Maintenant, prenons le nœud de sortie le plus haut et concentrons-nous sur ses 
 
 ![image 4](images/4.png)
 
+Encore une fois, le mot «**poids**» a ici un tout autre sens que celui des réseaux de neurones artificiels et convolutifs. Par exemple, avec les réseaux de neurones artificiels, nous avons multiplié la valeur du nœud d'entrée par le poids et, enfin, avons appliqué une fonction d'activation. Avec les **SOM**, en revanche, il n'y a pas de fonction d'activation.
 
+Les poids ne sont pas séparés des nœuds ici. Dans un SOM, les poids appartiennent au nœud de sortie lui-même. Au lieu d'être le résultat de l'addition des poids, le nœud de sortie d'un SOM contient les poids en tant que coordonnées. Portant ces poids, il essaie sournoisement de se frayer un chemin dans l'espace d'entrée.
+
+Dans cet exemple, nous avons un jeu de données 3D et chacun des nœuds d'entrée représente une coordonnée x. Le SOM les compresserait en un seul nœud de sortie qui porte trois poids. Si nous avons affaire à un ensemble de données à 20 dimensions, le nœud de sortie, dans ce cas, porterait 20 coordonnées de poids.
+
+Chacun de ces nœuds de sortie ne fait pas exactement partie de l'espace d'entrée, mais essaie néanmoins de s'y intégrer, en développant des lieux imaginaires pour eux-mêmes.
+
+![image 5](images/5.png)
