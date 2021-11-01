@@ -30,3 +30,9 @@ L'entrainement se déroule en plusieurs étapes et en plusieurs itérations :
 5. Les poids de chaque nœud voisin (les nœuds trouvés à l'étape 4) sont ajustés pour les rendre plus semblables au vecteur d'entrée. Plus un nœud est proche de la BMU ; plus ses poids s'altèrent.
    
 6. Répétez l'étape 2 pour N itérations.
+
+### Algorithme d'apprentissage dans les détails.
+
+Il est maintenant temps pour nous d'apprendre comment les SOM apprennent. Es-tu prêt? Commençons. Ici, nous avons une carte auto-organisatrice très basique.
+
+![image 2](images/2.png)
