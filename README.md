@@ -125,4 +125,12 @@ Soi-disant, vous comprenez maintenant quelle est la différence entre les poids 
 
 Le cercle rouge dans la figure ci-dessus représente le BMU de cette carte. Maintenant, le nouveau SOM devra mettre à jour ses poids afin qu'il soit encore plus proche de la première ligne de notre ensemble de données. La raison pour laquelle nous en avons besoin est que nos nœuds d'entrée ne peuvent pas être mis à jour, alors que nous avons le contrôle de nos nœuds de sortie.
 
-En termes simples, notre SOM se rapproche du point de données en étirant le BMU vers lui. L'objectif final est d'aligner notre carte sur l'ensemble de données comme nous le voyons dans l'image à l'extrême droite
+En termes simples, notre SOM se rapproche du point de données en étirant le BMU vers lui. L'objectif final est d'aligner notre carte sur l'ensemble de données comme nous le voyons dans l'image à l'extrême droite.
+
+#### Étape 3 : Calcul de la taille du quartier autour du BMU
+
+C'est là que les choses commencent à devenir plus intéressantes ! À chaque itération, une fois la BMU déterminée, l'étape suivante consiste à calculer lesquels des autres nœuds se trouvent dans le voisinage de la BMU. Tous ces nœuds verront leurs vecteurs de poids modifiés à l'étape suivante. Alors comment fait-on ? Eh bien, ce n'est pas trop difficile… d'abord, vous calculez quel devrait être le rayon du voisinage et ensuite c'est une simple application du bon vieux Pythagore pour déterminer si chaque nœud est dans la distance radiale ou non.
+
+La figure montre un exemple de la taille d'un quartier typique proche du début de l'entrainement.
+
+![image 14](images/14.png)
