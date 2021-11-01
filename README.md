@@ -114,3 +114,7 @@ Puisque nous avons calculé toutes les valeurs de Noeuds respectifs. Il est main
 ![image 12](images/12.png)
 
 Comme on peut le voir, le nœud numéro 3 est le plus proche avec une distance de 0,4. Nous appellerons ce nœud notre BMU (**best-matching unit**).
+
+#### Que se passe-t-il ensuite ?
+
+Pour comprendre cette prochaine partie, nous devrons utiliser un plus grand SOM.
