@@ -89,3 +89,10 @@ La distance euclidienne est donnée par :
 
 ![image 7](images/7.png)
 
+Où X est le vecteur d'entrée actuel et W est le vecteur de poids du nœud.
+
+Calculons la meilleure unité de correspondance à l'aide de la formule de distance.
+
+Pour les 1ers nœuds :
+
+![image 8](images/8.png)
