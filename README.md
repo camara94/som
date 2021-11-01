@@ -76,3 +76,12 @@ Chacun de ces nœuds de sortie ne fait pas exactement partie de l'espace d'entr�
 Nous avons initialisé aléatoirement les valeurs des poids (proche de 0 mais pas de 0).
 
 ![image 6](images/6.png)
+
+#### Étape 2 : Calcul de la meilleure unité correspondante
+
+La prochaine étape consiste à parcourir notre ensemble de données. Pour chacune des lignes de notre ensemble de données, nous essaierons de trouver le nœud le plus proche.
+
+Disons que nous prenons la ligne numéro 1 et que nous extrayons sa valeur pour chacune des trois colonnes que nous avons. Nous voudrons ensuite trouver lequel de nos nœuds de sortie est le plus proche de cette ligne.
+
+Pour déterminer la meilleure unité d'appariement, une méthode consiste à parcourir tous les nœuds et à calculer la distance euclidienne entre le vecteur de poids de chaque nœud et le vecteur d'entrée actuel. Le nœud avec un vecteur de poids le plus proche du vecteur d'entrée est étiqueté comme **BMU**.
+
